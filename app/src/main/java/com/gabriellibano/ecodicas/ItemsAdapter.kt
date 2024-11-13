@@ -24,8 +24,6 @@ class ItemsAdapter(private val onItemRemoved: (ItemModel) -> Unit) :
             button.setOnClickListener {
                 onItemRemoved(item)
             }
-
-            itemView.findViewById<TextView>(R.id.tituloDica).text = item.titulo
         }
     }
 
